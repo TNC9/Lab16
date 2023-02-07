@@ -17,3 +17,13 @@ int main(){
 	
 	return 0;
 }
+#include<algorithm>
+void shuffle(int &a,int &b,int &c,int &d){
+	int array[4] = {a, b, c, d};
+	random_shuffle(array, array + 4);
+	a = array[0];
+	b = array[1];
+	c = array[2];
+	d = array[3];
+
+}
